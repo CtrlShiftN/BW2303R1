@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo-Element Selectors Example</title>
+        <style>
+            /* Apply styles to the ::before pseudo-element */
+            h1::before {
+                content: "Title: ";
+                font-weight: bold;
+            }
+
+            /* Apply styles to the ::after pseudo-element */
+            p::after {
+                content: "This is the end of the paragraph.";
+                font-style: italic;
+            }
+
+            /* Apply styles to the ::first-letter pseudo-element */
+            p::first-letter {
+                font-size: 2em;
+                font-weight: bold;
+            }
+
+            /* Apply styles to the ::first-line pseudo-element */
+            p::first-line {
+                font-weight: bold;
+                color: blue;
+            }
+
+            /* Apply styles to the ::selection pseudo-element */
+            p::selection {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is a title</h1>
+        <p>
+            This is the first line of the paragraph. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Quisque mattis velit id nisi fermentum,
+            sed bibendum mauris pharetra. Duis mollis elit mauris, sed feugiat
+            ipsum malesuada vel. Nullam quis diam a felis tempor rhoncus. Fusce
+            tempor consequat neque at volutpat. Suspendisse euismod lacinia
+            tellus, ut efficitur nisi imperdiet vitae. Sed ut pharetra dolor.
+            Pellentesque euismod mauris ut ex rutrum varius.
+        </p>
+    </body>
+</html>
