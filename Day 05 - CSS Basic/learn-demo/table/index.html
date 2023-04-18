@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        #customers-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #customers-table tr td, #customers-table tr th{
+            border: 1px solid black;
+            padding: 0.625rem 0.5rem;
+        }
+        #customers-table tr td:nth-child(2) {
+            text-align: center;
+        }
+        #customers-table tr th {
+            background-color: aqua;
+        }
+        #customers-table tr:nth-child(even) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table id="customers-table">
+        <tr>
+            <th>Họ và tên</th>
+            <th>Ngày sinh</th>
+            <th>Quê quán</th>
+        </tr>
+        <tr>
+            <td>Nguyễn Xuân Quỳnh</td>
+            <td>25/05/1998</td>
+            <td>Hà Nội</td>
+        </tr>
+        <tr>
+            <td>Lê Xuân Phước</td>
+            <td>21/09/2000</td>
+            <td>Hà Đông</td>
+        </tr>
+        <tr>
+            <td>Diệp Bích</td>
+            <td>21/05/1984</td>
+            <td>Hà Bắc</td>
+        </tr>
+        <tr>
+            <td>Nguyễn Thanh Nhàn</td>
+            <td>30/01/2002</td>
+            <td>Hà Tây</td>
+        </tr>
+        <tr>
+            <td>Nguyễn Đình Tiến Rin</td>
+            <td>30/02/2000</td>
+            <td>Hưng Yên</td>
+        </tr>
+    </table>
+</body>
+</html>
