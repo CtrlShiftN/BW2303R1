@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Main layout</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .main-navbar {
+                background-color: aqua;
+                list-style-type: none;
+                margin: 0;
+                /* text-align: center; */
+            }
+            .main-navbar li {
+                display: inline-block;
+                padding: 10px;
+            }
+            .main-navbar li:hover {
+                background-color: blueviolet;
+                color: burlywood;
+            }
+            .nav-link {
+                text-decoration: none;
+                color: white;
+                font-weight: 800;
+                font-size: x-large;
+            }
+            main section {
+                display: inline-block;
+                width: 33%;
+                vertical-align: top;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .left-sidebar ul {
+                list-style-type: none;
+                margin-top: 0;
+                padding-left: 0;
+            }
+            .left-sidebar ul li {
+                padding: 5px 10px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            }
+            .left-sidebar .sidebar-link {
+                text-decoration: none;
+                color: black;
+                font-weight: 800;
+                font-size: x-large;
+            }
+            .left-sidebar li:hover {
+                background-color: lightgray;
+            }
+            footer {
+                text-align: center;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="main-navbar">
+                    <li>
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Groups</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Stories</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Reels</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="left-sidebar">
+                <ul>
+                    <li>
+                        <a class="sidebar-link" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">Groups</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">Pages</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">Stories</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">Reels</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="content">
+                Why do we use it? It is a long established fact that a reader
+                will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it
+                has a more-or-less normal distribution of letters, as opposed to
+                using 'Content here, content here', making it look like readable
+                English. Many desktop publishing packages and web page editors
+                now use Lorem Ipsum as their default model text, and a search
+                for 'lorem ipsum' will uncover many web sites still in their
+                infancy. Various versions have evolved over the years, sometimes
+                by accident, sometimes on purpose (injected humour and the
+                like).
+            </section>
+            <section class="right-sidebar">
+                This is a right sidebar
+            </section>
+        </main>
+        <footer>
+            &copy; QuyenNV 2023. All rights...
+        </footer>
+    </body>
+</html>

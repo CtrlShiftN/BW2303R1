@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Position</title>
+        <style>
+            .wrapper {
+                height: 600px;
+                position: relative;
+            }
+            .static {
+                position: static;
+                top: 0;
+                left: 0;
+                background-color: blue;
+                color: white;
+            }
+            .relative {
+                position: relative;
+                top: 50px;
+                left: 50px;
+                background-color: red;
+                color: white;
+            }
+            .absolute {
+                position: absolute;
+                top: 100px;
+                left: 100px;
+                background-color: yellow;
+                color: black;
+            }
+            .fixed {
+                position: fixed;
+                top: 0;
+                right: 0;
+                background-color: green;
+                color: white;
+            }
+            .sticky {
+                position: sticky;
+                top: 200px;
+                background-color: purple;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="static">Static</div>
+            <div class="relative">Relative</div>
+            <div class="absolute">Absolute</div>
+            <div class="fixed">Fixed</div>
+            <div class="sticky">Sticky</div>
+        </div>
+    </body>
+</html>
