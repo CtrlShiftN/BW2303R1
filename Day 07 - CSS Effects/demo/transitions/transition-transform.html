@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Transition and Transform</title>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                line-height: 100px;
+                margin: 10px;
+                cursor: pointer;
+                transition: all 0.5s ease;
+            }
+
+            .scale:hover {
+                transform: scale(1.2);
+            }
+
+            .rotate:hover {
+                transform: rotate(45deg);
+            }
+
+            .translate:hover {
+                transform: translate(50px, 50px);
+            }
+
+            .skew:hover {
+                transform: skew(20deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box scale">Scale</div>
+            <div class="box rotate">Rotate</div>
+            <div class="box translate">Translate</div>
+            <div class="box skew">Skew</div>
+        </div>
+    </body>
+</html>
