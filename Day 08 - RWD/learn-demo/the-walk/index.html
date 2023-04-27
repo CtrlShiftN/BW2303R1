@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Walk</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Verdana, sans-serif;
+            }
+            .left-sidebar,
+            .content,
+            .right-sidebar {
+                float: left;
+            }
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            header {
+                background-color: #f1f1f1;
+                padding: 15px;
+            }
+            .left-sidebar .menu {
+                list-style-type: none;
+                margin: 0;
+                padding-left: 0;
+            }
+            .left-sidebar .menu li {
+                padding: 8px;
+                margin-top: 7px;
+                border-bottom: #f1f1f1 1px solid;
+            }
+            .right-sidebar {
+                background-color: lightblue;
+                padding: 10px 15px;
+            }
+            .content {
+                padding: 0 20px;
+            }
+            @media only screen and (max-width: 768px) {
+                .left-sidebar,
+                .content,
+                .right-sidebar {
+                    width: 100%;
+                }
+            }
+            @media only screen and (min-width: 768px) {
+                .left-sidebar, .right-sidebar {
+                    width: 20%;
+                }
+                .content {
+                    width: 60%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Cinque Terre</h1>
+            <h3>Resize the browser window</h3>
+        </header>
+        <main>
+            <div class="row">
+                <div class="left-sidebar">
+                    <ul class="menu">
+                        <li>The Walk</li>
+                        <li>Transport</li>
+                        <li>History</li>
+                        <li>Gallery</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h2>The Walk</h2>
+                    <p>
+                        The walk from Monterosso to Riomaggiore will take you
+                        approximately two hours, give or take an hour depending
+                        on the weather conditions and your physical shape.
+                    </p>
+                    <img
+                        src="assets/media/images/universe.jpeg"
+                        alt="Universe pic"
+                        width="100%"
+                    />
+                </div>
+                <div class="right-sidebar">
+                    <h2>What?</h2>
+                    <p>
+                        Cinque Terre comprises five villages: Monterosso,
+                        Vernazza, Corniglia, Manarola, and Riomaggiore.
+                    </p>
+                    <h2>Where?</h2>
+                    <p>
+                        On the northwest cost of the Italian Riviera, north of
+                        the city La Spezia.
+                    </p>
+                    <h2>Price?</h2>
+                    <p>The Walk is free</p>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
