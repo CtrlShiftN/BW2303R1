@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Footer demo</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .col-1 {
+                width: 8.33%;
+            }
+            .col-2 {
+                width: 16.66%;
+            }
+            .col-3 {
+                width: 25%;
+            }
+            .col-4 {
+                width: 33.33%;
+            }
+            .col-5 {
+                width: 41.66%;
+            }
+            .col-6 {
+                width: 50%;
+            }
+            .col-7 {
+                width: 58.33%;
+            }
+            .col-8 {
+                width: 66.66%;
+            }
+            .col-9 {
+                width: 75%;
+            }
+            .col-10 {
+                width: 83.33%;
+            }
+            .col-11 {
+                width: 91.66%;
+            }
+            .col-12 {
+                width: 100%;
+            }
+            [class*="col-"] {
+                float: left;
+                padding: 1rem;
+                border: 1px solid red;
+            }
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .item-1 {
+                background-color: aqua;
+                padding: 1rem;
+            }
+            .item-2 {
+                background-color: red;
+                padding: 1rem;
+            }
+            .item-3 {
+                background-color: black;
+                padding: 1rem;
+            }
+            .item-4 {
+                background-color: green;
+                padding: 1rem;
+            }
+            @media only screen and (min-width: 768px) {
+                .col-md-4 {
+                    width: 33.33%;
+                }
+            }
+            @media only screen and (min-width: 992px) {
+                .col-lg-3 {
+                    width: 25%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main></main>
+        <footer>
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3 item-1"></div>
+                <div class="col-12 col-md-4 col-lg-3 item-2"></div>
+                <div class="col-12 col-md-4 col-lg-3 item-3"></div>
+                <div class="col-12 col-md-4 col-lg-3 item-4"></div>
+            </div>
+        </footer>
+    </body>
+</html>
